@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Comfortaa:wght@700&family=Oxanium:wght@700&family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(space-imgs/space-background-fewer-stars.png);
+  background-size: 100%;
+  color: white;
+}
+
+.highlight {
+  color: #99ffef;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+i:hover {
+  color: #99ffef;
+  transition: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  font-family: "Unica One", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.landing__h1 {
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  text-shadow: -0.08rem 0.08rem black;
+  margin-top: 9rem;
+}
+.landing__h2 {
+  text-shadow: -0.04rem 0.04rem black;
+  letter-spacing: 0.3rem;
+}
+.landing__image {
+  z-index: -1;
+}
+.landing #comet {
+  position: relative;
+  bottom: 12rem;
+  left: 0.5rem;
+  width: 95%;
+}
+.landing #big-planet {
+  position: relative;
+  bottom: 2rem;
+  left: 10rem;
+  width: 80%;
+}
+
+.about {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.about__h2 {
+  font-family: "Unica One", "sans-serif";
+  letter-spacing: 0.3rem;
+  text-shadow: -0.04rem 0.04rem black;
+}
+.about__container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.about__image {
+  width: 6rem;
+  box-shadow: -0.08rem 0.08rem black;
+  border-radius: 0.3rem;
+}
+.about__p {
+  font-family: "Oxanium";
+  text-align: justify;
+  font-size: 0.7rem;
+  width: 70%;
+  padding-top: 1rem;
+}
+
+.techStack {
+  display: flex;
+  width: 100%;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.techStack__icon {
+  display: flex !important;
+  width: 100px;
+  height: 75px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin: 0 20 0 20;
+}

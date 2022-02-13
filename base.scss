@@ -1,0 +1,33 @@
+$font-display: "Unica One", "sans-serif";
+$font-body: "Roboto", "sans-serif";
+$color-highlight: #99ffef;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(space-imgs/space-background-fewer-stars.png);
+  background-size: 100%;
+  color: white;
+}
+
+.highlight {
+  color: $color-highlight;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+i:hover {
+  color: $color-highlight;
+  transition: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
