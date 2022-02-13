@@ -1,7 +1,8 @@
 .about {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 
   &__h2 {
     font-family: $font-display;
@@ -11,13 +12,12 @@
 
   &__container {
     display: flex;
-    margin-top: 2rem;
+    margin: 1rem 1rem 0 1rem;
     justify-content: space-between;
   }
 
-  &__image {
+  &__myImage {
     width: 6rem;
-    
     box-shadow: -0.08rem 0.08rem black;
     border-radius: 0.3rem;
   }
@@ -28,5 +28,12 @@
     font-size: 0.7rem;
     width: 70%;
     padding-top: 1rem;
+  }
+
+  #blue-planet {
+    position: relative;
+    width: 15rem;
+    right: 7rem;
+    top: 1rem;
   }
 }
