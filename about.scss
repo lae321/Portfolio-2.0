@@ -1,0 +1,32 @@
+.about {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+
+  &__h2 {
+    font-family: $font-display;
+    letter-spacing: 0.3rem;
+    text-shadow: -0.04rem 0.04rem black;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 6rem;
+    
+    box-shadow: -0.08rem 0.08rem black;
+    border-radius: 0.3rem;
+  }
+
+  &__p {
+    font-family: "Oxanium";
+    text-align: justify;
+    font-size: 0.7rem;
+    width: 70%;
+    padding-top: 1rem;
+  }
+}

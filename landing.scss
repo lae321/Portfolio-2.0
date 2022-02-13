@@ -1,0 +1,40 @@
+.landing {
+  font-family: $font-display;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+
+  &__h1 {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    text-shadow: -0.08rem 0.08rem black;
+    margin-top: 9rem;
+  }
+
+  &__h2 {
+    text-shadow: -0.04rem 0.04rem black;
+    letter-spacing: 0.3rem;
+  }
+
+  &__image {
+    z-index: -1;
+    
+  }
+
+  #comet {
+    position: relative;
+    bottom: 12rem;
+    left: 0.5rem;
+    width: 95%;
+  }
+
+  #big-planet {
+    position: relative;
+    bottom: 2rem;
+    left: 10rem;
+    width: 80%;
+  }
+}
