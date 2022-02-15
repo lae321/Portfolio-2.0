@@ -10,11 +10,12 @@
 
   &__container {
     display: flex;
-    width: 80%;
+    width: 100%;
     font-size: 3.125rem;
     justify-content: center;
     align-items: center;
     margin: 1rem auto 0 auto;
+    padding-bottom: 1rem;
   }
 
   &__icon {
@@ -23,7 +24,7 @@
     justify-content: center;
     color: white;
     align-items: center;
-    margin: 0 20 0 20;
+    margin: 0 1rem;
   }
 
   #HTML:hover {
@@ -54,5 +55,12 @@
   #Java:hover {
     color: rgb(237, 139, 0);
     transition: 0.2s;
+  }
+
+  #saturn-1 {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    z-index: -1;
   }
 }

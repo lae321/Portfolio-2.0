@@ -107,11 +107,12 @@ html {
 }
 .techStack__container {
   display: flex;
-  width: 80%;
+  width: 100%;
   font-size: 3.125rem;
   justify-content: center;
   align-items: center;
   margin: 1rem auto 0 auto;
+  padding-bottom: 1rem;
 }
 .techStack__icon {
   display: flex !important;
@@ -119,7 +120,7 @@ html {
   justify-content: center;
   color: white;
   align-items: center;
-  margin: 0 20 0 20;
+  margin: 0 1rem;
 }
 .techStack #HTML:hover {
   color: #f06529;
@@ -143,5 +144,57 @@ html {
 }
 .techStack #Java:hover {
   color: #ed8b00;
+  transition: 0.2s;
+}
+.techStack #saturn-1 {
+  position: relative;
+  width: 15rem;
+  left: 7rem;
+  z-index: -1;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+}
+.work__h2 {
+  text-align: center;
+  font-family: "Unica One", "sans-serif";
+  letter-spacing: 0.3rem;
+  text-shadow: -0.04rem 0.04rem black;
+  margin: 1rem 0;
+}
+.work__project {
+  width: 60%;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 1rem auto;
+}
+.work__image {
+  position: relative;
+  top: 5rem;
+  left: 0.5rem;
+  width: 95%;
+  z-index: -1;
+  margin-top: -5rem;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact__h2 {
+  font-family: "Unica One", "sans-serif";
+  letter-spacing: 0.3rem;
+  text-shadow: -0.04rem 0.04rem black;
+  margin: 1rem 0;
+}
+.contact__icon {
+  color: white;
+  margin: 0 1.2rem;
+  font-size: 3.125rem;
+}
+.contact__icon:hover {
+  color: #99ffef;
   transition: 0.2s;
 }
