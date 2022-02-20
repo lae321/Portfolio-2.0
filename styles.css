@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Comfortaa:wght@700&family=Oxanium:wght@700&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Coda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
 * {
   margin: 0;
@@ -135,15 +133,16 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .about__h2 {
+    position: relative;
+    right: 11rem;
     text-shadow: -0.15rem 0.15rem black;
     letter-spacing: 0.4rem;
     font-size: 3rem;
-    width: 75%;
   }
   .about__container {
     display: flex;
-    width: 75%;
-    margin: 2rem 0 2rem 7rem;
+    width: fit-content;
+    margin: 2rem 0 2rem 10rem;
     justify-content: left;
   }
   .about__myImage {
@@ -155,7 +154,7 @@ html {
     font-family: "Oxanium";
     text-align: justify;
     font-size: 1.4rem;
-    width: 60%;
+    width: 50%;
     padding: 2rem 1.3rem 1.3rem 2rem;
   }
   .about #blue-planet {
@@ -228,12 +227,10 @@ html {
     position: relative;
     margin-top: 8rem;
     bottom: 27rem;
-    left: 18rem;
-    width: 70%;
+    left: 47rem;
+    width: fit-content;
   }
   .techStack__h2 {
-    position: relative;
-    left: 15.5rem;
     text-shadow: -0.15rem 0.15rem black;
     letter-spacing: 0.4rem;
     font-size: 3rem;
