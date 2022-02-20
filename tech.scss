@@ -64,3 +64,73 @@
     z-index: -1;
   }
 }
+
+@media screen and (min-device-width: 1024px) {
+  .techStack {
+    position: relative;
+    margin-top: 8rem;
+    bottom: 27rem;
+    left: 18rem;
+    width: 70%;
+
+    &__h2 {
+      position: relative;
+      left: 15.5rem;
+      text-shadow: -0.15rem 0.15rem black;
+      letter-spacing: 0.4rem;
+      font-size: 3rem;
+    }
+
+    &__container {
+      display: flex;
+      font-size: 5rem;
+      justify-content: right;
+      align-items: center;
+      margin: 2rem auto 0 auto;
+      padding-bottom: 1rem;
+    }
+
+    &__icon {
+      min-width: 6rem;
+      color: white;
+      margin: 0 3rem;
+    }
+
+    #HTML:hover {
+      color: rgb(240, 101, 41);
+      transition: 0.2s;
+    }
+
+    #CSS:hover {
+      color: rgb(41, 101, 241);
+      transition: 0.2s;
+    }
+
+    #JavaScript:hover {
+      color: rgb(247, 224, 24);
+      transition: 0.2s;
+    }
+
+    #Sass:hover {
+      color: rgb(207, 100, 154);
+      transition: 0.2s;
+    }
+
+    #React:hover {
+      color: rgb(93, 208, 240);
+      transition: 0.2s;
+    }
+
+    #Java:hover {
+      color: rgb(237, 139, 0);
+      transition: 0.2s;
+    }
+
+    #saturn-1 {
+      position: relative;
+      width: 15rem;
+      left: 17rem;
+      z-index: -1;
+    }
+  }
+}

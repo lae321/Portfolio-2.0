@@ -37,3 +37,43 @@
     top: 1rem;
   }
 }
+
+@media screen and (min-device-width: 1024px) {
+  .about {
+    &__h2 {
+      text-shadow: -0.15rem 0.15rem black;
+      letter-spacing: 0.4rem;
+      font-size: 3rem;
+      width: 75%;
+    }
+
+    &__container {
+      display: flex;
+      width: 75%;
+      margin: 2rem 0 2rem 7rem;
+      justify-content: left;
+    }
+
+    &__myImage {
+      width: 11rem;
+      box-shadow: -0.1rem 0.1rem black;
+      border-radius: 0.6rem;
+    }
+
+    &__p {
+      font-family: "Oxanium";
+      text-align: justify;
+      font-size: 1.4rem;
+      width: 60%;
+      padding: 2rem 1.3rem 1.3rem 2rem;
+    }
+
+    #blue-planet {
+      position: relative;
+      width: 25rem;
+      top: 3rem;
+      right: 30rem;
+      z-index: -1;
+    }
+  }
+}
