@@ -40,11 +40,12 @@
 
 @media screen and (min-device-width: 1024px) {
   .about {
+
     &__h2 {
       position: relative;
       right: 11rem;
       text-shadow: -0.15rem 0.15rem black;
-      letter-spacing: 0.4rem;
+      letter-spacing: 0.7rem;
       font-size: 3rem;
     }
 
@@ -57,7 +58,7 @@
 
     &__myImage {
       width: 11rem;
-      box-shadow: -0.1rem 0.1rem black;
+      box-shadow: -0.15rem 0.15rem black;
       border-radius: 0.6rem;
     }
 
@@ -70,11 +71,7 @@
     }
 
     #blue-planet {
-      position: relative;
-      width: 25rem;
-      top: 3rem;
-      right: 30rem;
-      z-index: -1;
+      display: none;
     }
   }
 }

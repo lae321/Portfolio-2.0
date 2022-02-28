@@ -57,6 +57,10 @@
     transition: 0.2s;
   }
 
+  #blue-planet {
+    display: none;
+  }
+
   #saturn-1 {
     position: relative;
     width: 15rem;
@@ -69,13 +73,14 @@
   .techStack {
     position: relative;
     margin-top: 8rem;
-    bottom: 27rem;
-    left: 47rem;
+    margin-bottom: -10
+    rem;
+    left: 42rem;
     width: fit-content;
 
     &__h2 {
       text-shadow: -0.15rem 0.15rem black;
-      letter-spacing: 0.4rem;
+      letter-spacing: 0.7rem;
       font-size: 3rem;
     }
 
@@ -124,11 +129,17 @@
       transition: 0.2s;
     }
 
-    #saturn-1 {
+    #blue-planet {
+      display: flex;
       position: relative;
-      width: 15rem;
-      left: 17rem;
+      width: 28rem;
+      bottom: 16rem;
+      right: 35rem;
       z-index: -1;
+    }
+
+    #saturn-1 {
+      display: none;
     }
   }
 }
