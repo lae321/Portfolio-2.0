@@ -146,17 +146,14 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .about__h2 {
-    position: relative;
-    right: 11rem;
     text-shadow: -0.15rem 0.15rem black;
     letter-spacing: 0.7rem;
     font-size: 3rem;
   }
   .about__container {
+    margin-top: 32px;
     display: flex;
-    width: fit-content;
-    margin: 2rem 0 2rem 10rem;
-    justify-content: left;
+    justify-content: center;
   }
   .about__myImage {
     width: 11rem;
@@ -236,11 +233,8 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .techStack {
-    position: relative;
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-bottom: -10rem;
-    left: 42rem;
-    width: fit-content;
   }
   .techStack__h2 {
     text-shadow: -0.15rem 0.15rem black;
@@ -248,11 +242,10 @@ html {
     font-size: 3rem;
   }
   .techStack__container {
+    margin-top: 32px;
     display: flex;
-    font-size: 5rem;
-    justify-content: right;
+    font-size: 4.5rem;
     align-items: center;
-    margin: 2rem auto 0 auto;
     padding-bottom: 1rem;
   }
   .techStack__icon {
@@ -287,9 +280,8 @@ html {
   .techStack #blue-planet {
     display: flex;
     position: relative;
+    bottom: 10rem;
     width: 28rem;
-    bottom: 16rem;
-    right: 35rem;
     z-index: -1;
   }
   .techStack #saturn-1 {

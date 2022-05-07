@@ -40,20 +40,16 @@
 
 @media screen and (min-device-width: 1024px) {
   .about {
-
     &__h2 {
-      position: relative;
-      right: 11rem;
       text-shadow: -0.15rem 0.15rem black;
       letter-spacing: 0.7rem;
       font-size: 3rem;
     }
 
     &__container {
+      margin-top: 32px;
       display: flex;
-      width: fit-content;
-      margin: 2rem 0 2rem 10rem;
-      justify-content: left;
+      justify-content: center;
     }
 
     &__myImage {

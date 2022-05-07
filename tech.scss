@@ -71,12 +71,8 @@
 
 @media screen and (min-device-width: 1024px) {
   .techStack {
-    position: relative;
-    margin-top: 8rem;
-    margin-bottom: -10
-    rem;
-    left: 42rem;
-    width: fit-content;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
 
     &__h2 {
       text-shadow: -0.15rem 0.15rem black;
@@ -85,11 +81,10 @@
     }
 
     &__container {
+      margin-top: 32px;
       display: flex;
-      font-size: 5rem;
-      justify-content: right;
+      font-size: 4.5rem;
       align-items: center;
-      margin: 2rem auto 0 auto;
       padding-bottom: 1rem;
     }
 
@@ -132,9 +127,8 @@
     #blue-planet {
       display: flex;
       position: relative;
+      bottom: 10rem;
       width: 28rem;
-      bottom: 16rem;
-      right: 35rem;
       z-index: -1;
     }
 
