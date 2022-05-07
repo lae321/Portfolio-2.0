@@ -10,11 +10,12 @@
 
   &__container {
     display: flex;
-    width: 80%;
+    width: 100%;
     font-size: 3.125rem;
     justify-content: center;
     align-items: center;
     margin: 1rem auto 0 auto;
+    padding-bottom: 1rem;
   }
 
   &__icon {
@@ -23,7 +24,7 @@
     justify-content: center;
     color: white;
     align-items: center;
-    margin: 0 20 0 20;
+    margin: 0 1rem;
   }
 
   #HTML:hover {
@@ -54,5 +55,85 @@
   #Java:hover {
     color: rgb(237, 139, 0);
     transition: 0.2s;
+  }
+
+  #blue-planet {
+    display: none;
+  }
+
+  #saturn-1 {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .techStack {
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+
+    &__h2 {
+      text-shadow: -0.15rem 0.15rem black;
+      letter-spacing: 0.7rem;
+      font-size: 3rem;
+    }
+
+    &__container {
+      margin-top: 32px;
+      display: flex;
+      font-size: 4.5rem;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    &__icon {
+      min-width: 6rem;
+      color: white;
+      margin: 0 3rem;
+    }
+
+    #HTML:hover {
+      color: rgb(240, 101, 41);
+      transition: 0.2s;
+    }
+
+    #CSS:hover {
+      color: rgb(41, 101, 241);
+      transition: 0.2s;
+    }
+
+    #JavaScript:hover {
+      color: rgb(247, 224, 24);
+      transition: 0.2s;
+    }
+
+    #Sass:hover {
+      color: rgb(207, 100, 154);
+      transition: 0.2s;
+    }
+
+    #React:hover {
+      color: rgb(93, 208, 240);
+      transition: 0.2s;
+    }
+
+    #Java:hover {
+      color: rgb(237, 139, 0);
+      transition: 0.2s;
+    }
+
+    #blue-planet {
+      display: flex;
+      position: relative;
+      bottom: 10rem;
+      width: 28rem;
+      z-index: -1;
+    }
+
+    #saturn-1 {
+      display: none;
+    }
   }
 }

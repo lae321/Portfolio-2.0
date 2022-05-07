@@ -37,3 +37,37 @@
     top: 1rem;
   }
 }
+
+@media screen and (min-device-width: 1024px) {
+  .about {
+    &__h2 {
+      text-shadow: -0.15rem 0.15rem black;
+      letter-spacing: 0.7rem;
+      font-size: 3rem;
+    }
+
+    &__container {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__myImage {
+      width: 11rem;
+      box-shadow: -0.15rem 0.15rem black;
+      border-radius: 0.6rem;
+    }
+
+    &__p {
+      font-family: "Oxanium";
+      text-align: justify;
+      font-size: 1.4rem;
+      width: 50%;
+      padding: 2rem 1.3rem 1.3rem 2rem;
+    }
+
+    #blue-planet {
+      display: none;
+    }
+  }
+}
