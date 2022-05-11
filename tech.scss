@@ -81,6 +81,7 @@
     }
 
     &__container {
+      width: 50%;
       margin-top: 32px;
       display: flex;
       font-size: 4.5rem;
@@ -89,9 +90,10 @@
     }
 
     &__icon {
-      min-width: 6rem;
+      min-width: auto;
+      height: 72px;
       color: white;
-      margin: 0 3rem;
+      margin: 0 auto;
     }
 
     #HTML:hover {
@@ -121,6 +123,18 @@
 
     #Java:hover {
       color: rgb(237, 139, 0);
+      transition: 0.2s;
+    }
+
+    #Spring:hover {
+      filter: brightness(0) saturate(100%) invert(62%) sepia(70%) saturate(395%)
+        hue-rotate(53deg) brightness(88%) contrast(86%);
+      transition: 0.2s;
+    }
+
+    #mySQL:hover {
+      filter: brightness(0) saturate(100%) invert(22%) sepia(36%) saturate(6165%)
+        hue-rotate(175deg) brightness(95%) contrast(101%);
       transition: 0.2s;
     }
 

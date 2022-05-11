@@ -242,6 +242,7 @@ html {
     font-size: 3rem;
   }
   .techStack__container {
+    width: 50%;
     margin-top: 32px;
     display: flex;
     font-size: 4.5rem;
@@ -249,9 +250,10 @@ html {
     padding-bottom: 1rem;
   }
   .techStack__icon {
-    min-width: 6rem;
+    min-width: auto;
+    height: 72px;
     color: white;
-    margin: 0 3rem;
+    margin: 0 auto;
   }
   .techStack #HTML:hover {
     color: #f06529;
@@ -275,6 +277,14 @@ html {
   }
   .techStack #Java:hover {
     color: #ed8b00;
+    transition: 0.2s;
+  }
+  .techStack #Spring:hover {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(70%) saturate(395%) hue-rotate(53deg) brightness(88%) contrast(86%);
+    transition: 0.2s;
+  }
+  .techStack #mySQL:hover {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(36%) saturate(6165%) hue-rotate(175deg) brightness(95%) contrast(101%);
     transition: 0.2s;
   }
   .techStack #blue-planet {
