@@ -76,9 +76,9 @@ html {
   }
   .landing__h1 {
     font-size: 9rem;
-    letter-spacing: 0.7rem;
-    text-shadow: -0.25rem 0.25rem black;
-    margin-top: 11rem;
+    letter-spacing: 0.9rem;
+    text-shadow: -0.3rem 0.3rem black;
+    margin-top: 14rem;
   }
   .landing__h2 {
     text-shadow: -0.15rem 0.15rem black;
@@ -94,7 +94,7 @@ html {
     width: 20%;
     z-index: -2;
     position: relative;
-    top: 5rem;
+    top: 3rem;
     right: 35rem;
   }
   .landing #comet {
@@ -104,9 +104,9 @@ html {
   }
   .landing #big-planet {
     position: relative;
-    bottom: 25rem;
+    bottom: 24rem;
     left: 33rem;
-    width: 53%;
+    width: 45%;
   }
 }
 .about {
@@ -127,7 +127,7 @@ html {
 }
 .about__myImage {
   width: 6rem;
-  box-shadow: -0.08rem 0.08rem black;
+  box-shadow: -0.08rem 0.08rem #82385b;
   border-radius: 0.3rem;
 }
 .about__p {
@@ -145,6 +145,9 @@ html {
 }
 
 @media screen and (min-device-width: 1024px) {
+  .about {
+    overflow: visible;
+  }
   .about__h2 {
     text-shadow: -0.15rem 0.15rem black;
     letter-spacing: 0.7rem;
@@ -157,7 +160,7 @@ html {
   }
   .about__myImage {
     width: 11rem;
-    box-shadow: -0.15rem 0.15rem black;
+    box-shadow: -0.25rem 0.25rem #82385b;
     border-radius: 0.6rem;
   }
   .about__p {
@@ -284,7 +287,7 @@ html {
     transition: 0.2s;
   }
   .techStack #mySQL:hover {
-    filter: brightness(0) saturate(100%) invert(22%) sepia(36%) saturate(6165%) hue-rotate(175deg) brightness(95%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(687%) hue-rotate(152deg) brightness(93%) contrast(101%);
     transition: 0.2s;
   }
   .techStack #blue-planet {
@@ -336,6 +339,73 @@ html {
     letter-spacing: 0.7rem;
     text-shadow: -0.15rem 0.15rem black;
     margin-bottom: 2rem;
+  }
+  .work__projectCard {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 275px;
+    width: 535px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+  }
+  .work__projectCard:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .work__projectCard:hover img {
+    transform: scale(1.05);
+  }
+  .work__projectCard:hover figcaption {
+    bottom: 0;
+  }
+  .work__projectCard--img {
+    height: 100%;
+    transition: 0.25s;
+  }
+  .work__projectCard--caption {
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px 30px 30px 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+  }
+  .work__projectCard--caption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: rebeccapurple;
+  }
+  .work__projectCard--caption p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .work__projectCard--caption button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 10px 30px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  .work *,
+.work *:before,
+.work *:after {
+    box-sizing: border-box;
+    outline: none;
   }
   .work__project {
     width: 60%;

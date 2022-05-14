@@ -56,9 +56,9 @@
 
     &__h1 {
       font-size: 9rem;
-      letter-spacing: 0.7rem;
-      text-shadow: -0.25rem 0.25rem black;
-      margin-top: 11rem;
+      letter-spacing: 0.9rem;
+      text-shadow: -0.3rem 0.3rem black;
+      margin-top: 14rem;
     }
 
     &__h2 {
@@ -77,7 +77,7 @@
       width: 20%;
       z-index: -2;
       position: relative;
-      top: 5rem;
+      top: 3rem;
       right: 35rem;
     }
 
@@ -89,9 +89,9 @@
 
     #big-planet {
       position: relative;
-      bottom: 25rem;
+      bottom: 24rem;
       left: 33rem;
-      width: 53%;
+      width: 45%;
     }
   }
 }

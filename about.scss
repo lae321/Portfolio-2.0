@@ -18,7 +18,7 @@
 
   &__myImage {
     width: 6rem;
-    box-shadow: -0.08rem 0.08rem black;
+    box-shadow: -0.08rem 0.08rem #82385b;
     border-radius: 0.3rem;
   }
 
@@ -40,6 +40,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .about {
+    overflow: visible;
     &__h2 {
       text-shadow: -0.15rem 0.15rem black;
       letter-spacing: 0.7rem;
@@ -54,7 +55,7 @@
 
     &__myImage {
       width: 11rem;
-      box-shadow: -0.15rem 0.15rem black;
+      box-shadow: -0.25rem 0.25rem #82385b;
       border-radius: 0.6rem;
     }
 
