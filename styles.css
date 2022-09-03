@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,13 @@ body {
 
 .highlight {
   color: #99ffef;
+}
+
+h2 {
+  font-family: "Unica One", "sans-serif";
+  text-shadow: -0.2vw 0.2vw black;
+  letter-spacing: 0.8vw;
+  font-size: 3rem;
 }
 
 a:link,
@@ -39,10 +47,6 @@ html {
   text-shadow: -0.08rem 0.08rem black;
   margin-top: 9rem;
 }
-.landing__h2 {
-  text-shadow: -0.04rem 0.04rem black;
-  letter-spacing: 0.3rem;
-}
 .landing__image {
   z-index: -1;
 }
@@ -64,38 +68,32 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .landing {
+    border: solid 1px red;
     font-family: "Unica One", "sans-serif";
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     align-items: center;
-    overflow: hidden;
-    margin-bottom: -25rem;
+    margin-bottom: 5%;
   }
   .landing__h1 {
     font-size: 9rem;
-    letter-spacing: 0.9rem;
+    letter-spacing: 0.9vw;
     text-shadow: -0.3rem 0.3rem black;
-    margin-top: 14rem;
+    margin-top: 15%;
   }
   .landing__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
     margin-top: 1rem;
-  }
-  .landing__image {
-    z-index: -1;
   }
   .landing #saturn-1 {
     display: flex;
     width: 20%;
     z-index: -2;
-    position: relative;
-    top: 3rem;
-    right: 35rem;
+    position: absolute;
+    top: 70%;
+    left: 1%;
   }
   .landing #comet {
     display: none;
@@ -103,9 +101,9 @@ html {
     width: 45%;
   }
   .landing #big-planet {
-    position: relative;
-    bottom: 20rem;
-    left: 35rem;
+    position: absolute;
+    top: 50%;
+    left: 70%;
     width: 35%;
   }
 }
@@ -114,11 +112,6 @@ html {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-}
-.about__h2 {
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
 }
 .about__container {
   display: flex;
@@ -148,13 +141,7 @@ html {
   .about {
     overflow: visible;
   }
-  .about__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
-  }
   .about__container {
-    margin-top: 32px;
     display: flex;
     justify-content: center;
   }
@@ -170,12 +157,6 @@ html {
 }
 .techStack {
   margin-top: 2rem;
-}
-.techStack__h2 {
-  text-align: center;
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
 }
 .techStack__container {
   display: flex;
@@ -232,11 +213,6 @@ html {
   .techStack {
     margin-top: 10rem;
     margin-bottom: -10rem;
-  }
-  .techStack__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
   }
   .techStack__container {
     width: 50%;
@@ -423,9 +399,6 @@ html {
   margin-bottom: 1rem;
 }
 .contact__h2 {
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
   margin: 1rem 0;
 }
 .contact__icon {

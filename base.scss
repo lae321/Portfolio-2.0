@@ -6,6 +6,7 @@ $color-highlight: #99ffef;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -16,6 +17,13 @@ body {
 
 .highlight {
   color: $color-highlight;
+}
+
+h2 {
+  font-family: $font-display;
+  text-shadow: -0.2vw 0.2vw black;
+  letter-spacing: 0.8vw;
+  font-size: 3rem;
 }
 
 a:link,
