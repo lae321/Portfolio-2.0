@@ -4,16 +4,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 body {
   background-image: url(space-imgs/space-background-fewer-stars.png);
   background-size: 100%;
   color: white;
+  font-family: "Oxanium", "sans-serif";
 }
 
 .highlight {
-  color: #99ffef;
+  color: #11e9c9;
+}
+
+h2 {
+  font-family: "Unica One", "sans-serif";
+  text-shadow: -0.2vw 0.2vw black;
+  letter-spacing: 0.8vw;
+  font-size: 3rem;
+  margin-bottom: 2vw;
+}
+
+p {
+  background-color: 0d2330;
 }
 
 a:link,
@@ -29,7 +44,6 @@ html {
   font-family: "Unica One", "sans-serif";
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: 100%;
   overflow: hidden;
 }
@@ -38,10 +52,6 @@ html {
   letter-spacing: 0.3rem;
   text-shadow: -0.08rem 0.08rem black;
   margin-top: 9rem;
-}
-.landing__h2 {
-  text-shadow: -0.04rem 0.04rem black;
-  letter-spacing: 0.3rem;
 }
 .landing__image {
   z-index: -1;
@@ -64,38 +74,26 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .landing {
-    font-family: "Unica One", "sans-serif";
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: auto;
+    height: 100%;
     align-items: center;
-    overflow: hidden;
-    margin-bottom: -25rem;
+    margin-bottom: 5%;
   }
   .landing__h1 {
     font-size: 9rem;
-    letter-spacing: 0.7rem;
-    text-shadow: -0.25rem 0.25rem black;
-    margin-top: 11rem;
+    letter-spacing: 0.9vw;
+    text-shadow: -0.3rem 0.3rem black;
+    margin-top: 15%;
   }
   .landing__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
-    margin-top: 1rem;
-  }
-  .landing__image {
-    z-index: -1;
+    margin-top: 2vw;
   }
   .landing #saturn-1 {
     display: flex;
     width: 20%;
     z-index: -2;
-    position: relative;
-    top: 5rem;
-    right: 35rem;
+    position: absolute;
+    top: 70%;
+    left: 1%;
   }
   .landing #comet {
     display: none;
@@ -103,35 +101,23 @@ html {
     width: 45%;
   }
   .landing #big-planet {
-    position: relative;
-    bottom: 25rem;
-    left: 33rem;
-    width: 53%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 35%;
   }
 }
 .about {
-  text-align: center;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
-.about__h2 {
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
-}
 .about__container {
   display: flex;
-  margin: 1rem 1rem 0 1rem;
+  flex-direction: column;
   justify-content: space-between;
 }
-.about__myImage {
-  width: 6rem;
-  box-shadow: -0.08rem 0.08rem black;
-  border-radius: 0.3rem;
-}
 .about__p {
-  font-family: "Oxanium";
   text-align: justify;
   font-size: 0.7rem;
   width: 70%;
@@ -145,27 +131,16 @@ html {
 }
 
 @media screen and (min-device-width: 1024px) {
-  .about__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
-  }
   .about__container {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-  }
-  .about__myImage {
-    width: 11rem;
-    box-shadow: -0.15rem 0.15rem black;
-    border-radius: 0.6rem;
+    justify-content: space-around;
+    align-items: center;
   }
   .about__p {
-    font-family: "Oxanium";
-    text-align: justify;
+    position: relative;
     font-size: 1.4rem;
-    width: 50%;
-    padding: 2rem 1.3rem 1.3rem 2rem;
+    padding-top: 0;
+    width: 45%;
+    margin-bottom: 2vw;
   }
   .about #blue-planet {
     display: none;
@@ -174,20 +149,13 @@ html {
 .techStack {
   margin-top: 2rem;
 }
-.techStack__h2 {
-  text-align: center;
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
-}
 .techStack__container {
   display: flex;
   width: 100%;
   font-size: 3.125rem;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto 0 auto;
-  padding-bottom: 1rem;
+  margin: 0 auto;
 }
 .techStack__icon {
   display: flex !important;
@@ -196,30 +164,6 @@ html {
   color: white;
   align-items: center;
   margin: 0 1rem;
-}
-.techStack #HTML:hover {
-  color: #f06529;
-  transition: 0.2s;
-}
-.techStack #CSS:hover {
-  color: #2965f1;
-  transition: 0.2s;
-}
-.techStack #JavaScript:hover {
-  color: #f7e018;
-  transition: 0.2s;
-}
-.techStack #Sass:hover {
-  color: #cf649a;
-  transition: 0.2s;
-}
-.techStack #React:hover {
-  color: #5dd0f0;
-  transition: 0.2s;
-}
-.techStack #Java:hover {
-  color: #ed8b00;
-  transition: 0.2s;
 }
 .techStack #blue-planet {
   display: none;
@@ -233,49 +177,47 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .techStack {
-    margin-top: 10rem;
-    margin-bottom: -10rem;
-  }
-  .techStack__h2 {
-    text-shadow: -0.15rem 0.15rem black;
-    letter-spacing: 0.7rem;
-    font-size: 3rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   .techStack__container {
-    margin-top: 32px;
-    display: flex;
+    width: 50%;
     font-size: 4.5rem;
-    align-items: center;
-    padding-bottom: 1rem;
+    margin-bottom: 2vw;
   }
   .techStack__icon {
-    min-width: 6rem;
+    min-width: auto;
+    height: 72px;
     color: white;
-    margin: 0 3rem;
+    margin: 0 auto;
+  }
+  .techStack i:hover,
+.techStack img:hover {
+    transition: 0.2s;
   }
   .techStack #HTML:hover {
     color: #f06529;
-    transition: 0.2s;
   }
   .techStack #CSS:hover {
     color: #2965f1;
-    transition: 0.2s;
   }
   .techStack #JavaScript:hover {
     color: #f7e018;
-    transition: 0.2s;
   }
   .techStack #Sass:hover {
     color: #cf649a;
-    transition: 0.2s;
   }
   .techStack #React:hover {
     color: #5dd0f0;
-    transition: 0.2s;
   }
   .techStack #Java:hover {
     color: #ed8b00;
-    transition: 0.2s;
+  }
+  .techStack #Spring:hover {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(70%) saturate(395%) hue-rotate(53deg) brightness(88%) contrast(86%);
+  }
+  .techStack #mySQL:hover {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(687%) hue-rotate(152deg) brightness(93%) contrast(101%);
   }
   .techStack #blue-planet {
     display: flex;
@@ -291,13 +233,6 @@ html {
 .work {
   display: flex;
   flex-direction: column;
-}
-.work__h2 {
-  text-align: center;
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
-  margin: 1rem 0;
 }
 .work__project {
   width: 60%;
@@ -319,14 +254,6 @@ html {
     display: flex;
     flex-direction: column;
   }
-  .work__h2 {
-    text-align: center;
-    font-family: "Unica One", "sans-serif";
-    font-size: 3rem;
-    letter-spacing: 0.7rem;
-    text-shadow: -0.15rem 0.15rem black;
-    margin-bottom: 2rem;
-  }
   .work__project {
     width: 60%;
     height: 10rem;
@@ -343,13 +270,9 @@ html {
   }
 }
 .contact {
-  text-align: center;
   margin-bottom: 1rem;
 }
 .contact__h2 {
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
   margin: 1rem 0;
 }
 .contact__icon {
@@ -358,6 +281,6 @@ html {
   font-size: 3.125rem;
 }
 .contact__icon:hover {
-  color: #99ffef;
+  color: #11e9c9;
   transition: 0.2s;
 }

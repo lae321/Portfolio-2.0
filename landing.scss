@@ -1,9 +1,7 @@
 .landing {
   font-family: $font-display;
-
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: 100%;
   overflow: hidden;
 
@@ -12,11 +10,6 @@
     letter-spacing: 0.3rem;
     text-shadow: -0.08rem 0.08rem black;
     margin-top: 9rem;
-  }
-
-  &__h2 {
-    text-shadow: -0.04rem 0.04rem black;
-    letter-spacing: 0.3rem;
   }
 
   &__image {
@@ -44,41 +37,28 @@
 
 @media screen and (min-device-width: 1024px) {
   .landing {
-    font-family: $font-display;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: auto;
+    height: 100%;
     align-items: center;
-    overflow: hidden;
-    margin-bottom: -25rem;
+    margin-bottom: 5%;
 
     &__h1 {
       font-size: 9rem;
-      letter-spacing: 0.7rem;
-      text-shadow: -0.25rem 0.25rem black;
-      margin-top: 11rem;
+      letter-spacing: 0.9vw;
+      text-shadow: -0.3rem 0.3rem black;
+      margin-top: 15%;
     }
 
     &__h2 {
-      text-shadow: -0.15rem 0.15rem black;
-      letter-spacing: 0.7rem;
-      font-size: 3rem;
-      margin-top: 1rem;
-    }
-
-    &__image {
-      z-index: -1;
+      margin-top: 2vw;
     }
 
     #saturn-1 {
       display: flex;
       width: 20%;
       z-index: -2;
-      position: relative;
-      top: 5rem;
-      right: 35rem;
+      position: absolute;
+      top: 70%;
+      left: 1%;
     }
 
     #comet {
@@ -88,10 +68,10 @@
     }
 
     #big-planet {
-      position: relative;
-      bottom: 25rem;
-      left: 33rem;
-      width: 53%;
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      width: 35%;
     }
   }
 }

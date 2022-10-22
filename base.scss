@@ -1,21 +1,35 @@
 $font-display: "Unica One", "sans-serif";
-$font-body: "Roboto", "sans-serif";
-$color-highlight: #99ffef;
+$color-highlight: rgb(17, 233, 201);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 body {
   background-image: url(space-imgs/space-background-fewer-stars.png);
   background-size: 100%;
   color: white;
+  font-family: "Oxanium", "sans-serif";
 }
 
 .highlight {
   color: $color-highlight;
+}
+
+h2 {
+  font-family: $font-display;
+  text-shadow: -0.2vw 0.2vw black;
+  letter-spacing: 0.8vw;
+  font-size: 3rem;
+  margin-bottom: 2vw;
+}
+
+p {
+  background-color: 0d2330;
 }
 
 a:link,
