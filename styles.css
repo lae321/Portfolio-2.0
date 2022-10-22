@@ -5,16 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  text-align: center;
 }
 
 body {
   background-image: url(space-imgs/space-background-fewer-stars.png);
   background-size: 100%;
   color: white;
+  font-family: "Oxanium", "sans-serif";
 }
 
 .highlight {
-  color: #99ffef;
+  color: #11e9c9;
 }
 
 h2 {
@@ -22,6 +24,7 @@ h2 {
   text-shadow: -0.2vw 0.2vw black;
   letter-spacing: 0.8vw;
   font-size: 3rem;
+  margin-bottom: 2vw;
 }
 
 a:link,
@@ -37,7 +40,6 @@ html {
   font-family: "Unica One", "sans-serif";
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: 100%;
   overflow: hidden;
 }
@@ -68,12 +70,6 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .landing {
-    border: solid 1px red;
-    font-family: "Unica One", "sans-serif";
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
     height: 100%;
     align-items: center;
     margin-bottom: 5%;
@@ -85,7 +81,7 @@ html {
     margin-top: 15%;
   }
   .landing__h2 {
-    margin-top: 1rem;
+    margin-top: 2vw;
   }
   .landing #saturn-1 {
     display: flex;
@@ -108,23 +104,16 @@ html {
   }
 }
 .about {
-  text-align: center;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 .about__container {
   display: flex;
-  margin: 1rem 1rem 0 1rem;
+  flex-direction: column;
   justify-content: space-between;
 }
-.about__myImage {
-  width: 6rem;
-  box-shadow: -0.08rem 0.08rem #82385b;
-  border-radius: 0.3rem;
-}
 .about__p {
-  font-family: "Oxanium";
   text-align: justify;
   font-size: 0.7rem;
   width: 70%;
@@ -138,18 +127,16 @@ html {
 }
 
 @media screen and (min-device-width: 1024px) {
-  .about {
-    overflow: visible;
-  }
   .about__container {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .about__p {
-    font-family: "Oxanium";
+    position: relative;
     font-size: 1.4rem;
-    padding: 0;
-    width: 50%;
+    padding-top: 0;
+    width: 45%;
+    margin-bottom: 2vw;
   }
   .about #blue-planet {
     display: none;
@@ -164,8 +151,7 @@ html {
   font-size: 3.125rem;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto 0 auto;
-  padding-bottom: 1rem;
+  margin: 0 auto;
 }
 .techStack__icon {
   display: flex !important;
@@ -174,30 +160,6 @@ html {
   color: white;
   align-items: center;
   margin: 0 1rem;
-}
-.techStack #HTML:hover {
-  color: #f06529;
-  transition: 0.2s;
-}
-.techStack #CSS:hover {
-  color: #2965f1;
-  transition: 0.2s;
-}
-.techStack #JavaScript:hover {
-  color: #f7e018;
-  transition: 0.2s;
-}
-.techStack #Sass:hover {
-  color: #cf649a;
-  transition: 0.2s;
-}
-.techStack #React:hover {
-  color: #5dd0f0;
-  transition: 0.2s;
-}
-.techStack #Java:hover {
-  color: #ed8b00;
-  transition: 0.2s;
 }
 .techStack #blue-planet {
   display: none;
@@ -211,16 +173,13 @@ html {
 
 @media screen and (min-device-width: 1024px) {
   .techStack {
-    margin-top: 10rem;
-    margin-bottom: -10rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   .techStack__container {
     width: 50%;
-    margin-top: 32px;
-    display: flex;
     font-size: 4.5rem;
-    align-items: center;
-    padding-bottom: 1rem;
+    margin-bottom: 2vw;
   }
   .techStack__icon {
     min-width: auto;
@@ -228,37 +187,33 @@ html {
     color: white;
     margin: 0 auto;
   }
+  .techStack i:hover,
+.techStack img:hover {
+    transition: 0.2s;
+  }
   .techStack #HTML:hover {
     color: #f06529;
-    transition: 0.2s;
   }
   .techStack #CSS:hover {
     color: #2965f1;
-    transition: 0.2s;
   }
   .techStack #JavaScript:hover {
     color: #f7e018;
-    transition: 0.2s;
   }
   .techStack #Sass:hover {
     color: #cf649a;
-    transition: 0.2s;
   }
   .techStack #React:hover {
     color: #5dd0f0;
-    transition: 0.2s;
   }
   .techStack #Java:hover {
     color: #ed8b00;
-    transition: 0.2s;
   }
   .techStack #Spring:hover {
     filter: brightness(0) saturate(100%) invert(62%) sepia(70%) saturate(395%) hue-rotate(53deg) brightness(88%) contrast(86%);
-    transition: 0.2s;
   }
   .techStack #mySQL:hover {
     filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(687%) hue-rotate(152deg) brightness(93%) contrast(101%);
-    transition: 0.2s;
   }
   .techStack #blue-planet {
     display: flex;
@@ -274,13 +229,6 @@ html {
 .work {
   display: flex;
   flex-direction: column;
-}
-.work__h2 {
-  text-align: center;
-  font-family: "Unica One", "sans-serif";
-  letter-spacing: 0.3rem;
-  text-shadow: -0.04rem 0.04rem black;
-  margin: 1rem 0;
 }
 .work__project {
   width: 60%;
@@ -302,83 +250,6 @@ html {
     display: flex;
     flex-direction: column;
   }
-  .work__h2 {
-    text-align: center;
-    font-family: "Unica One", "sans-serif";
-    font-size: 3rem;
-    letter-spacing: 0.7rem;
-    text-shadow: -0.15rem 0.15rem black;
-    margin-bottom: 2rem;
-  }
-  .work__projectCard {
-    font-family: Oxanium;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 275px;
-    width: 535px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    overflow: hidden;
-  }
-  .work__projectCard:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-  .work__projectCard:hover img {
-    transform: scale(1.05);
-  }
-  .work__projectCard:hover figcaption {
-    bottom: 0;
-  }
-  .work__projectCard--img {
-    height: 100%;
-    transition: 0.25s;
-  }
-  .work__projectCard--caption {
-    position: absolute;
-    bottom: -60%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 20px 30px 20px 30px;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    color: white;
-    line-height: 1;
-    transition: 0.25s;
-  }
-  .work__projectCard--caption h3 {
-    margin-bottom: 10px;
-    padding: 0;
-    color: #99ffef;
-  }
-  .work__projectCard--caption p {
-    font-size: 14px;
-    line-height: 1.75;
-  }
-  .work__projectCard--caption button {
-    height: fit-content;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0 0;
-    padding: 10px 30px;
-    background-color: #1abc9c;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  .work *,
-.work *:before,
-.work *:after {
-    box-sizing: border-box;
-    outline: none;
-  }
   .work__project {
     width: 60%;
     height: 10rem;
@@ -395,7 +266,6 @@ html {
   }
 }
 .contact {
-  text-align: center;
   margin-bottom: 1rem;
 }
 .contact__h2 {
@@ -407,6 +277,6 @@ html {
   font-size: 3.125rem;
 }
 .contact__icon:hover {
-  color: #99ffef;
+  color: #11e9c9;
   transition: 0.2s;
 }
