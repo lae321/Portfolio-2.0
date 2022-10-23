@@ -8,26 +8,21 @@
     margin-top: 10%;
 
     &__container {
-      display: flex;
       margin: 0 auto;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: row;
-
       width: 45%;
     }
 
     &__titleContainer {
+      display: flex;
       margin-bottom: 1vw;
       width: fit-content;
       font-size: 2rem;
+      align-items: center;
 
       i {
         padding-left: 1vw;
         font-size: 1.8rem;
       }
-
-
     }
     &__titleContainer:hover {
       color: $color-highlight;
