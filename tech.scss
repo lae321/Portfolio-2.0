@@ -34,6 +34,8 @@
 @media screen and (min-device-width: 1024px) {
   .techStack {
     margin-top: 10%;
+    position: relative;
+    overflow: visible;
 
     &__container {
       width: 50%;
@@ -105,7 +107,7 @@
     #blue-planet {
       display: inline;
       position: absolute;
-      top: 209%;
+      bottom: -61%;
       left: 1%;
       width: 20%;
       z-index: -1;

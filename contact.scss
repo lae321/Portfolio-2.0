@@ -1,6 +1,8 @@
 .contact {
+  position: relative;
   margin-top: 10%;
   margin-bottom: 1vw;
+  overflow: visible;
 
   &__icon {
     color: white;
@@ -11,5 +13,13 @@
   &__icon:hover {
     color: $color-highlight;
     transition: 0.2s;
+  }
+
+  #comet {
+    position: absolute;
+    width: 24%;
+    bottom: 30%;
+    right: 3%;
+    z-index: -1;
   }
 }

@@ -198,6 +198,8 @@ html {
 @media screen and (min-device-width: 1024px) {
   .techStack {
     margin-top: 10%;
+    position: relative;
+    overflow: visible;
   }
   .techStack__container {
     width: 50%;
@@ -250,7 +252,7 @@ html {
   .techStack #blue-planet {
     display: inline;
     position: absolute;
-    top: 209%;
+    bottom: -61%;
     left: 1%;
     width: 20%;
     z-index: -1;
@@ -285,8 +287,10 @@ html {
   }
 }
 .contact {
+  position: relative;
   margin-top: 10%;
   margin-bottom: 1vw;
+  overflow: visible;
 }
 .contact__icon {
   color: white;
@@ -296,4 +300,11 @@ html {
 .contact__icon:hover {
   color: #11e9c9;
   transition: 0.2s;
+}
+.contact #comet {
+  position: absolute;
+  width: 24%;
+  bottom: 30%;
+  right: 3%;
+  z-index: -1;
 }
