@@ -1,18 +1,25 @@
 .contact {
-  margin-bottom: 1rem;
-
-  &__h2 {
-    margin: 1rem 0;
-  }
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 1vw;
+  overflow: visible;
 
   &__icon {
     color: white;
-    margin: 0 1.2rem;
+    margin: 0 1.2vw;
     font-size: 3.125rem;
   }
 
   &__icon:hover {
     color: $color-highlight;
     transition: 0.2s;
+  }
+
+  #comet {
+    position: absolute;
+    width: 24%;
+    bottom: 30%;
+    right: 3%;
+    z-index: -1;
   }
 }

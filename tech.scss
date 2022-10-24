@@ -34,7 +34,8 @@
 @media screen and (min-device-width: 1024px) {
   .techStack {
     margin-top: 10%;
-    margin-bottom: 10%;
+    position: relative;
+    overflow: visible;
 
     &__container {
       width: 50%;
@@ -84,15 +85,31 @@
     }
 
     #mySQL:hover {
-      filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(687%) hue-rotate(152deg)
-        brightness(93%) contrast(101%);
+      filter: brightness(0) saturate(100%) invert(39%) sepia(88%) saturate(412%) hue-rotate(143deg)
+        brightness(93%) contrast(103%);
+    }
+
+    #gcp:hover {
+      filter: brightness(0) saturate(100%) invert(28%) sepia(80%) saturate(2174%) hue-rotate(-15deg)
+        brightness(99%) contrast(86%);
+    }
+
+    #aws:hover {
+      filter: brightness(0) saturate(100%) invert(52%) sepia(88%) saturate(1470%) hue-rotate(3deg)
+        brightness(109%) contrast(102%);
+    }
+
+    #postgresql:hover {
+      filter: brightness(0) saturate(100%) invert(39%) sepia(88%) saturate(412%) hue-rotate(143deg)
+        brightness(93%) contrast(103%);
     }
 
     #blue-planet {
-      display: flex;
-      position: relative;
-      bottom: 10rem;
-      width: 28rem;
+      display: inline;
+      position: absolute;
+      bottom: -61%;
+      left: 1%;
+      width: 20%;
       z-index: -1;
     }
 

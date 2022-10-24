@@ -28,13 +28,43 @@ h2 {
   margin-bottom: 2vw;
 }
 
-p {
-  background-color: 0d2330;
+h3 {
+  font-family: $font-display;
+  text-shadow: -0.1vw 0.1vw black;
+  letter-spacing: 0.6vw;
 }
 
-a:link,
-a:visited {
+.pContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  background-color: 0d2330;
+  font-size: 1.4rem;
+  padding-top: 0;
+  width: 45%;
+  margin-bottom: 2vw;
+  text-align: justify;
+}
+
+.titleP {
+  text-align: left;
+}
+
+.endP {
+  margin-bottom: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 html {

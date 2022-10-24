@@ -1,8 +1,4 @@
 .about {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -26,13 +22,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .about {
-    &__container {
-      justify-content: space-around;
-      align-items: center;
-    }
-
     &__p {
-      position: relative;
       font-size: 1.4rem;
       padding-top: 0;
       width: 45%;
