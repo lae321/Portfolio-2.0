@@ -1,0 +1,114 @@
+.techStack {
+  margin-top: 2rem;
+}
+.techStack__container {
+  display: flex;
+  width: 100%;
+  font-size: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.techStack__icon {
+  display: flex !important;
+  min-width: 6rem;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin: 0 1rem;
+}
+.techStack #HTML:hover {
+  color: #f06529;
+  transition: 0.2s;
+}
+.techStack #CSS:hover {
+  color: #2965f1;
+  transition: 0.2s;
+}
+.techStack #JavaScript:hover {
+  color: #f7e018;
+  transition: 0.2s;
+}
+.techStack #Sass:hover {
+  color: #cf649a;
+  transition: 0.2s;
+}
+.techStack #React:hover {
+  color: #5dd0f0;
+  transition: 0.2s;
+}
+.techStack #Java:hover {
+  color: #ed8b00;
+  transition: 0.2s;
+}
+.techStack #blue-planet {
+  display: none;
+}
+.techStack #saturn-1 {
+  position: relative;
+  width: 15rem;
+  left: 7rem;
+  z-index: -1;
+}
+
+@media screen and (min-device-width: 1024px) {
+  .techStack {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+  .techStack__container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .techStack__icon {
+    min-width: auto;
+    height: 72px;
+    color: white;
+    margin: 0 auto;
+  }
+  .techStack #HTML:hover {
+    color: #f06529;
+    transition: 0.2s;
+  }
+  .techStack #CSS:hover {
+    color: #2965f1;
+    transition: 0.2s;
+  }
+  .techStack #JavaScript:hover {
+    color: #f7e018;
+    transition: 0.2s;
+  }
+  .techStack #Sass:hover {
+    color: #cf649a;
+    transition: 0.2s;
+  }
+  .techStack #React:hover {
+    color: #5dd0f0;
+    transition: 0.2s;
+  }
+  .techStack #Java:hover {
+    color: #ed8b00;
+    transition: 0.2s;
+  }
+  .techStack #Spring:hover {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(70%) saturate(395%) hue-rotate(53deg) brightness(88%) contrast(86%);
+    transition: 0.2s;
+  }
+  .techStack #mySQL:hover {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(687%) hue-rotate(152deg) brightness(93%) contrast(101%);
+    transition: 0.2s;
+  }
+  .techStack #blue-planet {
+    display: flex;
+    position: relative;
+    bottom: 10rem;
+    width: 28rem;
+    z-index: -1;
+  }
+  .techStack #saturn-1 {
+    display: none;
+  }
+}
